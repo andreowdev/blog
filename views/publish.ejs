@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/styles.css" />
+    <title>Publicar Artigo</title>
+  </head>
+  <body>
+    <%- include('./partials/header'); -%>
+   
+    <form action="/publish" method="post">
+        <div class="mb-3">
+            <label>Titulo Post</label>
+            <input class="form-control" type="text" id="title-public" name="postTitle" />
+            <label>Artigo</label>
+            <textarea class="form-control" id="w3review" name="postBody" rows="5" cols="30"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" name="button">Enviar artigo</button>
+    </form>
+
+
+    <%- include('./partials/footer'); -%>
+  </body>
+</html>
